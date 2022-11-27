@@ -6,7 +6,7 @@ import AppLogo from '@/components/AppLogo'
 
 export default function AppFooter() {
   return (
-    <div className="app-footer">
+    <footer className="app-footer">
       <div className="logo-container">
         <AppLogo />
       </div>
@@ -29,6 +29,6 @@ export default function AppFooter() {
           alt="Twitter"
         />
       </div>
-    </div>
+    </footer>
   )
 }

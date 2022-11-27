@@ -1,19 +1,23 @@
 .hero {
-  @apply min-h-[1300px];
+  @apply min-h-[1537px];
 
   .hero-heading {
-    @apply mx-6;
+    @apply mx-6 pt-16;
 
-    p {
-      @apply pt-5 text-body-2 tablet:w-2/3 tablet:text-body-1;
+    .content {
+      @apply pt-5 text-blackish;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      letter-spacing: 0;
     }
   }
 
   .illustrations {
-    @apply grid h-[600px] grid-cols-1 grid-rows-3 pt-[4rem];
+    @apply grid h-[37.5rem] grid-cols-1 grid-rows-3 pt-[4rem] mt-[6.25rem];
 
     .background-item {
-      @apply col-start-1 col-end-1 row-start-1 row-end-2 h-[37.5rem] bg-blackish bg-[length:280px_420px] bg-top bg-no-repeat;
+      @apply col-start-1 col-end-1 row-start-1 row-end-2 h-[37.5rem] bg-blackish bg-[length:280px_420px] bg-top bg-no-repeat rounded-xl;
       background-image: url('@/assets/bg-pattern-2.svg');
     }
   }

@@ -8,6 +8,11 @@ export default defineConfig({
   server: {
     port: 3000,
   },
+  css: {
+    modules: {
+      localsConvention: 'camelCaseOnly',
+    },
+  },
   resolve: {
     alias: {
       '@': resolve(__dirname, 'src'),

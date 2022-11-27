@@ -1,24 +1,26 @@
-import './AppDownloadCta.scss'
+import styles from './AppDownloadCta.module.css'
 import AppDownloadButton from '@/components/AppDownloadButton'
 import AppHeading from '@/components/AppHeading'
 
 export default function AppDownloadCta() {
   return (
     <div
-      className="app-download-cta"
+      className={styles.container}
       role="application"
     >
-      <AppHeading level={2}>Premium EQ</AppHeading>
-      <p className="content">
+      <div className={styles.headingContainer}>
+        <AppHeading level={2}>Premium EQ</AppHeading>
+      </div>
+      <p className={styles.content}>
         Get expert-level control with a robust equalizer, volume mixer, and
         spatial audio. Take your listening experience to a whole new level and
         access all our incredible features!
       </p>
-      <div className="price-container">
-        <div className="price">$4</div>
-        <div className="period">/ month</div>
+      <div className={styles.priceContainer}>
+        <div className={styles.price}>$4</div>
+        <div className={styles.period}>/ month</div>
       </div>
-      <div className="button-container">
+      <div className={styles.buttonContainer}>
         <AppDownloadButton os="ios" />
         <AppDownloadButton os="android" />
       </div>
