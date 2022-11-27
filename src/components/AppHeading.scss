@@ -1,0 +1,18 @@
+.app-heading {
+  @apply font-bold;
+
+  .level-1 {
+    @apply text-[2.5rem] leading-[3.125rem];
+  }
+
+  .level-2 {
+  }
+
+  @screen tablet {
+    .level-1 {
+    }
+
+    .level-2 {
+    }
+  }
+}

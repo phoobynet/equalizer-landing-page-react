@@ -1,0 +1,7 @@
+.landing-header {
+  @apply mx-6 pt-10;
+
+  .landing-bg-pattern {
+    @apply absolute top-[-2.6rem] right-[-4rem] hidden origin-top-right scale-[.85];
+  }
+}

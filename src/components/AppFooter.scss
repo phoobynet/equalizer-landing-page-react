@@ -1,0 +1,15 @@
+.app-footer {
+  @apply mx-6;
+
+  .logo-container {
+    @apply mb-8;
+  }
+
+  .content {
+    @apply text-body-2;
+  }
+
+  .social {
+    @apply mt-16 flex justify-start space-x-5;
+  }
+}
