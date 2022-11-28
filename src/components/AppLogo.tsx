@@ -1,10 +1,10 @@
-import './AppLogo.scss'
+import styles from './AppLogo.module.scss'
 import logoUrl from '@/assets/logo.svg'
 
 export default function AppLogo() {
   return (
     <img
-      className="app-logo"
+      className={styles.appLogo}
       src={logoUrl}
       alt="Equalizer logo"
     />

@@ -1,4 +1,4 @@
-import './AppFooter.scss'
+import styles from './AppFooter.module.scss'
 import facebookUrl from '@/assets/icon-facebook.svg'
 import instagramUrl from '@/assets/icon-instagram.svg'
 import twitterUrl from '@/assets/icon-twitter.svg'
@@ -6,16 +6,16 @@ import AppLogo from '@/components/AppLogo'
 
 export default function AppFooter() {
   return (
-    <footer className="app-footer">
-      <div className="logo-container">
+    <footer className={styles.appFooter}>
+      <div className={styles.logoContainer}>
         <AppLogo />
       </div>
-      <p className="content">All rights reserved © Equalizer 2021</p>
-      <p className="content">
+      <p className={styles.content}>All rights reserved © Equalizer 2021</p>
+      <p className={styles.content}>
         Have any problems? Contact us via social media or email us at{' '}
         <strong>equalizer@example.com</strong>
       </p>
-      <div className="social">
+      <div className={styles.social}>
         <img
           src={facebookUrl}
           alt="Facebook"

@@ -1,38 +1,54 @@
-import './AppDownloadButton.scss'
+import styles from './AppDownloadButton.module.scss'
 import iconAndroid from '@/assets/icon-android.svg'
 import iconIOS from '@/assets/icon-apple.svg'
-import classNames from 'classnames'
-import { useMemo } from 'react'
+import { useEffect, useState } from 'react'
 
 interface Props {
   os: 'ios' | 'android'
 }
 
+interface ButtonState {
+  iconUrl: string
+  className: string
+  text: string
+}
+
 export default function AppDownloadButton({ os }: Props) {
-  const buttonText = useMemo(
-    () => (os === 'ios' ? 'iOS Download' : 'Android Download'),
-    [os],
-  )
+  const [buttonState, setButtonStateState] = useState<ButtonState>()
 
-  const iconUrl = useMemo(() => (os === 'ios' ? iconIOS : iconAndroid), [os])
-
-  const classes = useMemo(() => {
-    return classNames({
-      'app-download-button': true,
-      [os]: true,
-    })
+  useEffect(() => {
+    switch (os) {
+      case 'ios':
+        setButtonStateState({
+          iconUrl: iconIOS,
+          className: styles.btnIos,
+          text: 'iOS Download',
+        })
+        break
+      case 'android':
+        setButtonStateState({
+          iconUrl: iconAndroid,
+          className: styles.btnAndroid,
+          text: 'Android Download',
+        })
+        break
+    }
   }, [os])
+
+  if (!buttonState) {
+    return null
+  }
 
   return (
     <button
-      className={classes}
+      className={buttonState.className}
       type="button"
     >
       <img
-        src={iconUrl}
+        src={buttonState.iconUrl}
         alt="OS icon"
       />
-      <span>{buttonText}</span>
+      <span className={styles.btnContent}>{buttonState.text}</span>
     </button>
   )
 }

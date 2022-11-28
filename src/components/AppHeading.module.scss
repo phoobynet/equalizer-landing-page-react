@@ -1,0 +1,32 @@
+.heading-level-1 {
+  @apply text-blackish font-bold;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -0.45px;
+}
+
+// TODO: Convert to rem
+.heading-level-2 {
+  @apply text-whitish font-bold;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 0;
+}
+
+@screen tablet {
+  .heading-level-1 {
+  }
+
+  .heading-level-2 {
+  }
+}
+@screen desktop {
+  .heading-level-1 {
+  }
+
+  .heading-level-2 {
+  }
+}
+

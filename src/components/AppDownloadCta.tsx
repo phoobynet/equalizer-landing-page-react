@@ -1,11 +1,11 @@
-import styles from './AppDownloadCta.module.css'
+import styles from './AppDownloadCta.module.scss'
 import AppDownloadButton from '@/components/AppDownloadButton'
 import AppHeading from '@/components/AppHeading'
 
 export default function AppDownloadCta() {
   return (
     <div
-      className={styles.container}
+      className={styles.appDownloadCta}
       role="application"
     >
       <div className={styles.headingContainer}>
