@@ -1,10 +1,10 @@
 .hero {
   @apply min-h-[1537px];
 
-  .hero-heading {
+  &-heading {
     @apply mx-6 pt-16;
 
-    .content {
+    &-content {
       @apply pt-5 text-blackish;
       font-weight: 400;
       font-size: 16px;
@@ -13,10 +13,10 @@
     }
   }
 
-  .illustrations {
+  &-illustrations {
     @apply grid h-[37.5rem] grid-cols-1 grid-rows-3 pt-[4rem] mt-[6.25rem];
 
-    .background-item {
+    &-background-item {
       @apply col-start-1 col-end-1 row-start-1 row-end-2 h-[37.5rem] bg-blackish bg-[length:280px_420px] bg-top bg-no-repeat rounded-xl;
       background-image: url('@/assets/bg-pattern-2.svg');
     }
