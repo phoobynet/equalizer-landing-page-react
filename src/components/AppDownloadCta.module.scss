@@ -1,8 +1,8 @@
 .app-download-cta {
-  @apply relative top-[202px] col-start-1 col-end-2 row-start-2 row-end-3 h-[546px] justify-self-center rounded-xl bg-secondary px-[36px] pt-[2.7rem];
+  @apply rounded-xl bg-secondary px-[2.25rem] py-[3rem];
 
   .heading-container {
-    margin-top: 6px;
+    //margin-top: 6px;
   }
 
   .content {

@@ -20,5 +20,37 @@
       @apply col-start-1 col-end-1 row-start-1 row-end-2 h-[600px] bg-blackish bg-[length:280px_420px] bg-top bg-no-repeat rounded-xl;
       background-image: url('@/assets/bg-pattern-2.svg');
     }
+
+    &-cta {
+      @apply relative top-[202px] col-start-1 col-end-2 row-start-2 row-end-3 h-[546px] justify-self-center;
+    }
+  }
+}
+
+@screen tablet {
+  .app-main-hero {
+    @apply min-h-[1537px];
+
+    &-heading {
+      @apply mx-10 pt-[5.9rem] w-[32.5rem];
+
+      &-content {
+        @apply pt-[1.78rem] w-[32rem] text-blackish text-body-1;
+      }
+    }
+
+    &-illustration {
+      @apply grid h-[600px] grid-cols-1 grid-rows-3 pt-[64px] mt-[11.5rem];
+
+      &-app-img {
+        @apply relative top-[-8.71rem] col-start-1 col-end-2 row-start-1 row-end-2 h-[34.75rem] left-[6rem] justify-self-start;
+      }
+
+      &-background-item {
+        @apply col-start-1 col-end-1 row-start-1 row-end-2 h-[600px] w-[696px] rounded-xl justify-self-center;
+        @apply bg-[length:280px_420px] bg-[54%_-17%] bg-no-repeat bg-blackish;
+        background-image: url('@/assets/bg-pattern-2.svg');
+      }
+    }
   }
 }

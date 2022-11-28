@@ -2,6 +2,15 @@
   @apply mx-6 pt-10;
 
   &-pattern {
-    @apply absolute top-[-2.6rem] right-[-4rem] hidden origin-top-right scale-[.85];
+    @apply hidden;
+  }
+}
+
+@screen tablet {
+  .landing-header {
+    @apply mx-10 pt-[62px];
+    &-pattern {
+      @apply absolute top-[-2.09rem] right-[-2.2rem] origin-top-right h-[25rem] block;
+    }
   }
 }

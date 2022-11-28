@@ -24,7 +24,9 @@ export default function AppMain() {
           src={illustrationAppUrl}
           alt="Mobile app illustration"
         />
-        <AppDownloadCta />
+        <div className={styles.appMainHeroIllustrationCta}>
+          <AppDownloadCta />
+        </div>
       </div>
     </main>
   )

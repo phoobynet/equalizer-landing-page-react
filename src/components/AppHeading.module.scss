@@ -17,6 +17,11 @@
 
 @screen tablet {
   .heading-level-1 {
+    @apply text-blackish font-bold;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 4rem;
+    letter-spacing: -0.046rem;
   }
 
   .heading-level-2 {
