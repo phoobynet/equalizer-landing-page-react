@@ -16,6 +16,7 @@ module.exports = {
       blackish: '#191826',
     },
     fontSize: {
+      // TODO: Consider how this works with responsive design
       'heading-1': [
         '5.5rem',
         {
@@ -34,34 +35,18 @@ module.exports = {
         },
       ],
       'body-1': [
-        '1.25rem',
+        '1.125rem',
         {
           fontWeight: 400,
-          lineHeight: '2.125rem',
+          lineHeight: '28px',
+          letterSpacing: 0,
         },
       ],
       'body-2': [
         '1rem',
         {
           fontWeight: 400,
-          lineHeight: '1.625rem',
-        },
-      ],
-      button: [
-        '1rem',
-        {
-          lineHeight: '2rem',
-          fontWeight: 700,
-          paragraphSpacing: '0.063rem',
-          letterSpacing: '-0.011rem',
-        },
-      ],
-      price: [
-        '4.063rem',
-        {
-          lineHeight: '3.25rem',
-          paragraphSpacing: '0.063rem',
-          fontWeight: 700,
+          lineHeight: '26px',
         },
       ],
     },

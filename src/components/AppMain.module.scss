@@ -1,0 +1,24 @@
+.app-main-hero {
+  @apply min-h-[1537px];
+
+  &-heading {
+    @apply mx-6 pt-16;
+
+    &-content {
+      @apply pt-5 text-blackish text-body-2;
+    }
+  }
+
+  &-illustration {
+    @apply grid h-[600px] grid-cols-1 grid-rows-3 pt-[64px] mt-[100px];
+
+    &-app-img {
+      @apply relative top-[-6rem] col-start-1 col-end-2 row-start-1 row-end-2 h-[26.875rem] justify-self-center;
+    }
+
+    &-background-item {
+      @apply col-start-1 col-end-1 row-start-1 row-end-2 h-[600px] bg-blackish bg-[length:280px_420px] bg-top bg-no-repeat rounded-xl;
+      background-image: url('@/assets/bg-pattern-2.svg');
+    }
+  }
+}

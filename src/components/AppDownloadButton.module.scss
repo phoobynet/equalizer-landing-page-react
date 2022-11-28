@@ -1,10 +1,6 @@
 .btn {
   @apply flex h-[61px] w-full items-center justify-center space-x-2 rounded-xl;
 
-  &-content {
-    @apply mt-[2px] text-[18px] font-bold;
-  }
-
   &-ios {
     @extend .btn;
     // HACK: Weird issue with button being transparent unless hovered
@@ -15,6 +11,10 @@
     @extend .btn;
     // HACK: Weird issue with button being transparent unless hovered
     @apply bg-whitish text-blackish hover:bg-tertiary #{!important};
+  }
+
+  &-content {
+    @apply mt-[2px] text-[1.125rem] font-bold;
   }
 }
 

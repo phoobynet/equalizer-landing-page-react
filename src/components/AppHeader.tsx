@@ -1,8 +1,8 @@
-import styles from './Header.module.scss'
+import styles from './AppHeader.module.scss'
 import bgPattern1Url from '@/assets/bg-pattern-1.svg'
 import AppLogo from '@/components/AppLogo'
 
-export default function Header() {
+export default function AppHeader() {
   return (
     <header className={styles.landingHeader}>
       <AppLogo />

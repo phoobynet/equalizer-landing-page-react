@@ -1,12 +1,12 @@
 import AppFooter from '@/components/AppFooter'
-import Header from '@/components/landing/Header'
-import Hero from '@/components/landing/Hero'
+import AppHeader from '@/components/AppHeader'
+import AppMain from '@/components/AppMain'
 
 export default function Landing() {
   return (
     <>
-      <Header />
-      <Hero />
+      <AppHeader />
+      <AppMain />
       <AppFooter />
     </>
   )

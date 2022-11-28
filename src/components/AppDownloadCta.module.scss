@@ -1,31 +1,28 @@
 .app-download-cta {
-  @apply relative top-[12.66rem] col-start-1 col-end-2 row-start-2 row-end-3 h-[34.125rem] justify-self-center rounded-xl bg-secondary px-[36px] pt-[2.7rem];
+  @apply relative top-[202px] col-start-1 col-end-2 row-start-2 row-end-3 h-[546px] justify-self-center rounded-xl bg-secondary px-[36px] pt-[2.7rem];
 
   .heading-container {
     margin-top: 6px;
   }
 
   .content {
-    @apply pt-4 text-whitish;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 26px;
-    letter-spacing: 0;
+    @apply pt-3 text-whitish text-body-1;
   }
 
   .price-container {
-    @apply pt-10 flex items-center space-x-4 pl-[6px];
+    @apply pt-9 flex items-center space-x-4 pl-[6px];
+
     .price {
       @apply text-[65px] font-bold leading-[52px] tracking-[0px] text-whitish;
     }
 
     .period {
-      @apply text-body-1 text-whitish;
+      @apply text-body-1 text-whitish tracking-wider;
     }
   }
 
   .button-container {
-    @apply mt-8 ml-1.5 flex flex-col space-y-[1rem];
+    @apply mt-8 ml-1.5 flex flex-col space-y-[16px];
   }
 }
 
