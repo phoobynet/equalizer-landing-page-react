@@ -1,16 +1,12 @@
 .app-download-cta {
   @apply rounded-xl bg-secondary px-[2.25rem] py-[3rem];
 
-  .heading-container {
-    //margin-top: 6px;
-  }
-
   .content {
-    @apply pt-3 text-whitish text-body-1;
+    @apply mt-[0.9rem] text-whitish text-body-1;
   }
 
   .price-container {
-    @apply pt-9 flex items-center space-x-4 pl-[6px];
+    @apply mt-[2.10rem] flex items-center space-x-[17px] ml-[6px];
 
     .price {
       @apply text-[65px] font-bold leading-[52px] tracking-[0px] text-whitish;
@@ -26,6 +22,11 @@
   }
 }
 
+@screen tablet {
+  .app-download-cta {
+    @apply w-[399px] px-[3rem];
+  }
+}
 
 
 

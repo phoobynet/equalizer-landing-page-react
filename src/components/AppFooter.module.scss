@@ -6,10 +6,28 @@
   }
 
   .content {
-    @apply text-body-2;
+    @apply text-body-2 mt-[1px];
   }
 
   .social {
     @apply mt-16 flex justify-start space-x-5;
+  }
+}
+
+@screen tablet {
+  .app-footer {
+    @apply mx-[2.1rem];
+
+    .contact {
+      @apply flex flex-row justify-between items-start;
+    }
+
+    .content {
+      @apply w-[22.625rem];
+    }
+
+    .social {
+      @apply justify-end mt-1 mr-1;
+    }
   }
 }

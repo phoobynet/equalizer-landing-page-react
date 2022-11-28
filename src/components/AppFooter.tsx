@@ -11,23 +11,25 @@ export default function AppFooter() {
         <AppLogo />
       </div>
       <p className={styles.content}>All rights reserved © Equalizer 2021</p>
-      <p className={styles.content}>
-        Have any problems? Contact us via social media or email us at{' '}
-        <strong>equalizer@example.com</strong>
-      </p>
-      <div className={styles.social}>
-        <img
-          src={facebookUrl}
-          alt="Facebook"
-        />
-        <img
-          src={instagramUrl}
-          alt="Instagram"
-        />
-        <img
-          src={twitterUrl}
-          alt="Twitter"
-        />
+      <div className={styles.contact}>
+        <p className={styles.content}>
+          Have any problems? Contact us via social media or email us at{' '}
+          <strong>equalizer@example.com</strong>
+        </p>
+        <div className={styles.social}>
+          <img
+            src={facebookUrl}
+            alt="Facebook"
+          />
+          <img
+            src={instagramUrl}
+            alt="Instagram"
+          />
+          <img
+            src={twitterUrl}
+            alt="Twitter"
+          />
+        </div>
       </div>
     </footer>
   )

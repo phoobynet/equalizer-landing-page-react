@@ -8,9 +8,7 @@ export default function AppDownloadCta() {
       className={styles.appDownloadCta}
       role="application"
     >
-      <div className={styles.headingContainer}>
-        <AppHeading level={2}>Premium EQ</AppHeading>
-      </div>
+      <AppHeading level={2}>Premium EQ</AppHeading>
       <p className={styles.content}>
         Get expert-level control with a robust equalizer, volume mixer, and
         spatial audio. Take your listening experience to a whole new level and
