@@ -7,7 +7,10 @@ export default function AppMain() {
   return (
     <main className={styles.appMainHero}>
       <div className={styles.appMainHeroHeading}>
-        <AppHeading level={1}>
+        <AppHeading
+          level={1}
+          className="text-blackish"
+        >
           We make your music sound extraordinary.
         </AppHeading>
         <p className={styles.appMainHeroHeadingContent}>

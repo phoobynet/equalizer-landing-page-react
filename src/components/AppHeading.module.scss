@@ -1,37 +1,32 @@
-.heading-level-1 {
-  @apply text-blackish font-bold;
-  font-weight: 700;
-  font-size: 2.5rem;
-  line-height: 3rem;
-  letter-spacing: -0.028rem;
-}
+.app-heading {
+  @apply font-bold;
 
-// TODO: Convert to rem
-.heading-level-2 {
-  @apply text-whitish font-bold;
-  font-weight: 700;
-  font-size: 2rem;
-  line-height: 2.5rem;
-  letter-spacing: 0;
-}
-
-@screen tablet {
-  .heading-level-1 {
-    @apply text-blackish font-bold;
-    font-weight: 700;
-    font-size: 4rem;
-    line-height: 4rem;
-    letter-spacing: -0.046rem;
+  &-1 {
+    @extend .app-heading;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    letter-spacing: -0.028rem;
   }
 
-  .heading-level-2 {
-  }
-}
-@screen desktop {
-  .heading-level-1 {
+  &-2 {
+    @extend .app-heading;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    letter-spacing: 0;
   }
 
-  .heading-level-2 {
+  @screen tablet {
+    &-1 {
+      @extend .app-heading;
+      font-size: 4rem;
+      line-height: 4rem;
+      letter-spacing: -0.046rem;
+    }
+
+    &-2 {
+    }
+  }
+  @screen desktop {
   }
 }
 
