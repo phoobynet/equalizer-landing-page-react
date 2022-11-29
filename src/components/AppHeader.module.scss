@@ -1,4 +1,4 @@
-.landing-header {
+.app-header {
   @apply mx-6 pt-10;
 
   &-pattern {
@@ -7,10 +7,19 @@
 }
 
 @screen tablet {
-  .landing-header {
-    @apply mx-10 pt-[62px];
+  .app-header {
+    @apply mx-10 pt-[3.875rem];
     &-pattern {
       @apply absolute top-[-2.09rem] right-[-2.2rem] origin-top-right h-[25rem] block;
+    }
+  }
+}
+
+@screen desktop {
+  .app-header {
+    @apply mx-[10.3rem];
+    &-pattern {
+      @apply absolute top-[-2.3rem] right-0 origin-top-right h-[29rem] block;
     }
   }
 }

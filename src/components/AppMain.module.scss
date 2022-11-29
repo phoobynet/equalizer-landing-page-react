@@ -56,3 +56,35 @@
     }
   }
 }
+
+@screen desktop {
+  .app-main-hero {
+    @apply h-[91rem];
+
+    &-heading {
+      @apply mx-[10.3rem] pt-[8rem] w-[54rem];
+
+      &-content {
+        @apply pt-10 w-[54rem];
+        font-size: 20px;
+        line-height: 34px;
+      }
+    }
+
+    &-illustration {
+      @apply mt-[16rem];
+
+      &-app-img {
+        @apply top-[-13.3rem] h-[40rem] left-[-18.5rem];
+      }
+
+      &-background-item {
+        @apply h-[37.5rem] w-[69.5rem] justify-self-center bg-[42%_-30%] bg-[length:312px_468px];
+      }
+
+      &-cta {
+        @apply top-[-5.6rem] left-[14.9rem];
+      }
+    }
+  }
+}

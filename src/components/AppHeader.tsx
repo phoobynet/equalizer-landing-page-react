@@ -4,12 +4,12 @@ import AppLogo from '@/components/AppLogo'
 
 export default function AppHeader() {
   return (
-    <header className={styles.landingHeader}>
+    <header className={styles.appHeader}>
       <AppLogo />
       <img
         src={bgPattern1Url}
         alt="Background pattern"
-        className={styles.landingHeaderPattern}
+        className={styles.appHeaderPattern}
       />
     </header>
   )

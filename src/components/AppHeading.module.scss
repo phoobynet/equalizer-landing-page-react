@@ -22,11 +22,21 @@
       line-height: 4rem;
       letter-spacing: -0.046rem;
     }
-
-    &-2 {
-    }
   }
   @screen desktop {
+    &-1 {
+      @extend .app-heading;
+      font-size: 5.5rem;
+      line-height: 5.5rem;
+      letter-spacing: -0.06rem;
+    }
+
+    &-2 {
+      @extend .app-heading;
+      font-size: 2.5rem;
+      line-height: 3.25rem;
+      letter-spacing: 0;
+    }
   }
 }
 
